@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Item</title>
+    <style>
+        /* Reset some default styles for better consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+.container{
+    display: flex;
+}
+        /* Styling for the card container */
+        .card {
+            max-width: 300px;
+            /* background-color: #fff; */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+        }
+
+        /* Styling for the card image */
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Styling for the card content */
+        .card-content {
+            padding: 20px;
+        }
+
+        /* Styling for the card title */
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for the card description */
+        .card-description {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .card {
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        <img src="https://img.freepik.com/premium-photo/hummingbird-flight-with-colorful-iridescent-plumage-blurred-generative-ai_191095-1879.jpg" alt="Card Image">
+        <div class="card-content">
+            <h2 class="card-title">Card Title</h2>
+            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://news.cgtn.com/news/3067544e79416a4e346b444d33636a4d33677a4e31457a6333566d54/img/706e8ab2de1d48f08221d1ca678c956c/706e8ab2de1d48f08221d1ca678c956c.png" alt="Card Image">
+        <div class="card-content">
+            <h2 class="card-title">Card Title</h2>
+            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://chantecaille.com/cdn/shop/articles/020520_All-about-the-Hummingbird_featured-image.jpg?v=1581003744" alt="Card Image">
+        <div class="card-content">
+            <h2 class="card-title">Card Title</h2>
+            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
